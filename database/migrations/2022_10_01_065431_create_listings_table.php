@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+        * Run the migrations.
      *
      * @return void
      */
@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('location');
             $table->string('email');
+            $table->string('website');
             $table->longText('description');
             $table->timestamps();
         });
