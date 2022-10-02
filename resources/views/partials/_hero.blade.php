@@ -12,11 +12,11 @@ class="relative h-72 bg-laravel flex flex-col justify-center align-center text-c
         Easy<span class="text-black">Jobs</span>
     </h1>
     <p class="text-2xl text-gray-200 font-bold my-4">
-        Find or post Laravel jobs & projects
+        Find your dream job
     </p>
     <div>
         <a
-            href="register.html"
+            href="/register"
             class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
             >Sign Up to List a Job</a
         >
