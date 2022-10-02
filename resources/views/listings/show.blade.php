@@ -41,8 +41,19 @@
         <x-card class="mt-4 p-2 flex space-x-6">
             <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
                 <a href="/listings/{{ $listing->id }}/edit">
-                    <i class="fa-solid fa-pencil"></i>Edit</a></button>
+                    <i class="fa-solid fa-pencil"></i></a></button>
+
+
+            <form action="/listings/{{ $listing->id }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </form>
         </x-card>
+
+
     </div>
 
 </x-layout>

@@ -22,7 +22,7 @@
                 },
             };
     </script>
-    <title>LaraGigs | Find Laravel Jobs & Projects</title>
+    <title>EasyJobs | Find Laravel Jobs & Projects</title>
 </head>
 
 <body class="mb-48">

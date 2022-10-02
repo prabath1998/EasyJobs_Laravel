@@ -50,7 +50,7 @@ class ListingController extends Controller
 
         // Session::flash('message','Listing Created..!');
 
-        return redirect('/')->with('message','Listing Created Successfully..!');
+        return redirect('/')->with('message','Listing created successfully..!');
 
     }
 
@@ -81,8 +81,14 @@ class ListingController extends Controller
 
         // Session::flash('message','Listing Created..!');
 
-        return back()->with('message','Listing Updated Successfully..!');
+        return back()->with('message','Listing updated successfully..!');
 
+    }
+
+    //delete listing
+    public function destroy(Listing $listing){
+        $listing->delete();
+        return redirect('/')->with('message','Listing deleted successfylly..!');
     }
 
 
